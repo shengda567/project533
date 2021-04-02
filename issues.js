@@ -2,7 +2,7 @@ const dbConnection = require("./config/mongoConnection");
 const mongoCollections = require("./config/mongoCollections");
 const axios = require("axios");
 const issuesData = mongoCollections.issues;
-const token = "a2a23967a7eb679272addc27ff5001e070c2682c"; //my own token
+const token = "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"; //my own token
 const headers = {
   Authorization: "token " + token,
 };

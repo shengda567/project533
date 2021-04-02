@@ -19,4 +19,5 @@ const getCollectionFn = (collection) => {
 module.exports = {
   commits: getCollectionFn("commits"),
   issues: getCollectionFn("issues"),
+  collaborators: getCollectionFn("collaborators"),
 };

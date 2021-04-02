@@ -12,6 +12,7 @@ async function saveTime() {
   const commitsList = await commitsCollection.find({}).toArray();
   commitsList.sort(comparator);
   let timesArray = Array(144);
+  let minTimeCommit;
   let lastCommit;
   for (let i = 0; i < commitsList.length; i++) {
     let commit = commitsList[i];
