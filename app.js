@@ -6,16 +6,14 @@ const saveTime = require("./saveTime");
 const connection = require("./config/mongoConnection");
 
 const main = async () => {
-  const commits_data = await commits.saveCommits(
-    "shengda567/CS546_FinalProject_SmallZillow"
-  );
-  //   const downloadAllCommits_data = await downloadAllCommits.getAllCommits(
+  // const commits_data = await commits.saveCommits(
+  //   "CycloneDX/cyclonedx-maven-plugin"
+  // );
+  // const downloadAllCommits_data = await downloadAllCommits.getAllCommits(
   //     "shengda567/CS546_FinalProject_SmallZillow"
   //   );
-  const issues_data = await issues.saveissues(
-    "shengda567/CS546_FinalProject_SmallZillow"
-  );
-  const saveTime_data = await saveTime.saveTime();
+  const issues_data = await issues.saveissues("OCA/project");
+  //const saveTime_data = await saveTime.saveTime();
   const db = await connection();
   await db.serverConfig.close();
 

@@ -1,7 +1,7 @@
 const axios = require("axios");
 const fs = require("fs");
 const path = require("path");
-const token = "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"; //my own token
+const token = "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"; //my own token
 const headers = {
   Authorization: "token " + token,
 };
